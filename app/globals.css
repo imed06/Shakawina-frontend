@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background: #F8AF28;
+}
+
+main{
+    @apply flex justify-between items-center h-screen mx-40 mt-40 bg-no-repeat 
+}
+
+.header{
+    background-image: url("./assets/zelija.png");
+
+}
+
+h1 {
+    @apply font-bold text-white text-6xl;
+  }
+
+  h2 {
+    @apply font-bold text-white text-3xl;
+  }
+
+p {
+    @apply  text-lg
+}
+
+.stepper{
+    background-image: url("./assets/zelija.png");
+    background: #F8AF28;
+    @apply mt-32 bg-no-repeat 
+}
