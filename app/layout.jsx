@@ -1,3 +1,5 @@
+"use client"
+import Footer from './components/shared/footer'
 import CustomNavbar from './components/shared/navbar'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
@@ -13,7 +15,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <CustomNavbar />
         {children}
       </body>
     </html>

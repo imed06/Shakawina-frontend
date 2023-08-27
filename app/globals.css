@@ -3,32 +3,53 @@
 @tailwind utilities;
 
 body{
-    background: #F8AF28;
+  /* background: #F8AF28; */
+  @apply bg-gray-50
 }
 
 main{
-    @apply flex justify-between items-center h-screen mx-40 mt-40 bg-no-repeat 
+  /* background-image: url("./assets/zelija.png"); */
+  
+    @apply flex justify-between items-center flex-col
+}
+
+.content {
+  @apply  mt-32
+}
+
+.input {
+  @apply flex w-full
 }
 
 .header{
-    background-image: url("./assets/zelija.png");
+    @apply flex justify-evenly items-center
 
+}
+
+.header > p {
+  @apply text-2xl
 }
 
 h1 {
-    @apply font-bold text-white text-6xl;
+    @apply font-bold text-black text-6xl;
   }
 
-  h2 {
-    @apply font-bold text-white text-3xl;
-  }
 
-p {
-    @apply  text-lg
-}
+  h3 {
+    @apply font-bold text-lg;
+  }
 
 .stepper{
     background-image: url("./assets/zelija.png");
     background: #F8AF28;
-    @apply mt-32 bg-no-repeat 
+    @apply mt-32 bg-no-repeat rounded-[70px] px-20 py-10 
+}
+
+.title {
+  background-image: url("./assets/Ellipse-12.png");
+  @apply bg-no-repeat bg-left-top pt-8 pl-8 leading-tight text-black text-4xl 
+}
+
+footer{
+  @apply bg-[#101739] w-full
 }
